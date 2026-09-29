@@ -47,3 +47,7 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Raw data: never commit. Download steps are in data-raw/README.md
+data-raw/*
+!data-raw/README.md
