@@ -51,3 +51,8 @@ rsconnect/
 # Raw data: never commit. Download steps are in data-raw/README.md
 data-raw/*
 !data-raw/README.md
+
+
+
+# Clean data made by R/01_clean.R: never commit
+data/
