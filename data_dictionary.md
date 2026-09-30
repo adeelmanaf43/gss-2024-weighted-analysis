@@ -42,6 +42,8 @@ The following variables are retained for survey design specification beginning i
 | `mode`                                                      | Interview mode           | Records how the interview was conducted.         |
 | `satfin`, `age`, `degree`, `wrkstat`, `marital`, `income16` | Original GSS codes       | Retained to support verification of each recode. |
 
+mode -> 1 = in person, 2 = phone, 3 = more than one mode, 4 = web.
+
 ## Missing-Value Handling
 
 GSS missing-value codes—including don't know, not asked, no answer, and skipped on web—are stored as `NA`.

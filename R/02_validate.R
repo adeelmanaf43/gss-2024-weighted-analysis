@@ -40,5 +40,5 @@ print(count(clean, income16, income_group), n = 30)
 
 
 # 5. Percent missing per variable (copy into data_dictionary.md)-------------------------------------------
-print(round(100 & colMeans(is.na(clean)),1))
+print(round(100 * colMeans(is.na(clean)),1))
 cat("All checks passed.\n")
