@@ -23,7 +23,7 @@ gss <- select(gss, all_of(keep))
 
 # 2. Missing codes-> NA, then drop the Stata labels ---------------------
 # zap_missing(): every GSS missing code (don't know, not asked, 
-#  no aswer, skipped on web) becomes R's plain NA
+#  no answer, skipped on web) becomes R's plain NA
 # zap_labels(): keeps the numeric codes: we write our own labels below
 gss <- gss |> zap_missing() |> zap_labels()
 
@@ -31,7 +31,7 @@ gss <- gss |> zap_missing() |> zap_labels()
 # 3. Recode into analysis groups ----------------------------------------
 clean <- gss |>
   mutate(
-    # Outcome: 1 pretty well, 2 more or less, 2 not satisfied at all
+    # Outcome: 1 pretty well, 2 more or less, 3 not satisfied at all
     fin_sat = factor(satfin, levels = 1:3, 
                      labels = c("Pretty well satisfied", "More or less satisfied",
                                 "Not satisfied at all")),
@@ -73,7 +73,7 @@ clean <- gss |>
         income16 %in% 1:15 ~ "Under $30k",
         income16 %in% 16:19 ~ "$30k-$59k",
         income16 %in% 20:22 ~ "$60k-$109k",
-        income16 %in% 23:26 ~ "$100k+",
+        income16 %in% 23:26 ~ "$110k+",
         is.na(income16) ~ "Not reported"
       ), levels = c("Under $30k", "$30k-$59k", "$60k-$109k",
                     "$100k+", "Not reported")
@@ -85,8 +85,8 @@ clean <- gss |>
 # 4. Save -----------------------------------------------------------
 
 dir.create("data", showWarnings = FALSE)
-saveRDS(clean, "data/gss_clean.rds")
-cat("Saved", nrow(clean), "row and", ncol(clean), "columns to data/gss2024_clean.rds\n")
+saveRDS(clean, "data/gss2024_clean.rds")
+cat("Saved", nrow(clean), "rows and", ncol(clean), "columns to data/gss2024_clean.rds\n")
 
 #The original columns (satfin, wrkstat and so on) stay in the file next to the new ones. In Hour 4, you'll cross-check old against new to 
 #prove every recode is correct.
