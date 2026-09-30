@@ -76,7 +76,7 @@ clean <- gss |>
         income16 %in% 23:26 ~ "$110k+",
         is.na(income16) ~ "Not reported"
       ), levels = c("Under $30k", "$30k-$59k", "$60k-$109k",
-                    "$100k+", "Not reported")
+                    "$110k+", "Not reported")
     )
   )
 

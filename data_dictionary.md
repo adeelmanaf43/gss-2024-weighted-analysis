@@ -26,11 +26,12 @@
 
 The following variables are retained for survey design specification beginning in Session 3.
 
-| Variable                            | Description                     | Use                                                    |
-| ----------------------------------- | ------------------------------- | ------------------------------------------------------ |
-| `vstrat`                            | Variance stratum                | Identifies survey strata.                              |
-| `vpsu`                              | Primary sampling unit (cluster) | Identifies sampling clusters.                          |
-| `wtssps`, `wtssnrps`, `wtssnrps_as` | Survey weights                  | The weight used for analysis is selected in Session 3. |
+| Variable         | Description                                                       | Use                           |
+| ---------------- | ----------------------------------------------------------------- | ----------------------------- |
+| `vstrat`         | Variance stratum                                                  | Identifies survey strata.     |
+| `vpsu`           | Primary sampling unit (cluster)                                   | Identifies sampling clusters. |
+| wtssps, wtssnrps | Main-sample weights; missing for the 677 AmeriSpeak cases (17.0%) |
+| wtssnrps_as      | Weight for all 3,986 respondents, including AmeriSpeak            |                               |
 
 ## Additional Retained Variables
 
