@@ -27,8 +27,8 @@ table2 <- design_main |>
   add_p(test = all_categorical() ~ "svy.chisq.test") |> # Rao-Scott test
   bold_labels() |>
   modify_header(label ~ "**Group**", all_stat_cols() ~ "**{level}**") |>
-  modify_spanning_header(all_stat_cols() ~ "**Satisfaction with financial situation") |>
-  modify_caption("**Table 2. Financial satisfaction by group. U.S. adults, 2024")
+  modify_spanning_header(all_stat_cols() ~ "**Satisfaction with financial situation**") |>
+  modify_caption("**Table 2. Financial satisfaction by group. U.S. adults, 2024**")
 
 print(table2) # opens in Rstudio's Viewer pane
 

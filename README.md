@@ -25,6 +25,15 @@ Expectations below were written on 29 September 2026, before any results were se
 
 Weighting decision: the main analysis uses the 3,309 main-sample respondents with WTSSNRPS, NORC's recommended weight. All 3,986 respondents (including the AmeriSpeak oversample, weight WTSSNRPS_AS) are used as a sensitivity check.
 
+**After holding income constant** (written 1 October 2026, after the crosstabs and before the model), I expect:
+
+**After holding income constant** (written 1 October 2026, after the crosstabs and before the model), I expect:
+
+- Age: weakens, because I expect a younger and an older person with the same income to feel about the same.
+- Education: stays, because at the same income, people with more education may have easier, more comfortable jobs, while people with less education may have to work harder to earn the same.
+- Work status: stays, because unemployed and part-time workers may feel insecure about their future earnings, while full-time workers feel more secure in their jobs.
+- Marital status: stays, because a married person's partner can keep earning if they lose their job, while a single person who loses their job has no one to fall back on.
+
 ## Approach
 
 ## Key findings
