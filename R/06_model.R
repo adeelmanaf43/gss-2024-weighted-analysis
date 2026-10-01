@@ -52,13 +52,13 @@ labels_b <- c(labels_a, list(income_group ~ "Family income"))
 
 table3 <- tbl_merge(
   tbls = list(
-    tbl_regression(model_a, exponetiate = TRUE, label = labels_a),
+    tbl_regression(model_a, exponentiate = TRUE, label = labels_a),
     tbl_regression(model_b, exponentiate = TRUE, label = labels_b)
   ),
   tab_spanner = c("**Without income**", "**With income**")
 ) |>
   bold_labels() |>
-  modify_caption("**Table3. Odds of being not satisfied at all with one's financial situation, U.S. adults, 2024**")
+  modify_caption("**Table 3. Odds of being not satisfied at all with one's financial situation, U.S. adults, 2024**")
 
 print(table3)   # Opens in Rstudio's viewer pane
 

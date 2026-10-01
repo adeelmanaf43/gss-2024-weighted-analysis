@@ -53,3 +53,45 @@ Source: Figures 1-5 (`outputs/fig1_age.png` to `outputs/fig5_income.png`) and
 - Income: dissatisfaction is flat below $60k (43.1% and 42.5%), then falls to 31.2%
   at $60k-$109k and 12.8% at $110k+, with no overlap between these steps.
 - Check: the chart estimates match Table 2 exactly, from a different script.
+
+## Model: which characteristics are still linked once income is held constant?
+
+Source: Table 3 (`outputs/table3_model.html`, made by `R/06_model.R`). Weighted logistic
+regression of "not satisfied at all", n = 3,173. Odds ratios are from the model with
+income, so each one holds all the other characteristics constant.
+
+- All four characteristics stay linked to dissatisfaction once income is held constant
+  (overall tests: age p = 0.006, education p = 0.011, work status and marital status
+  p < 0.0001).
+- At the same age, education, marital status and income, retirees had about a third of
+  the odds of full-time workers of being not satisfied at all with their finances
+  (OR 0.33, 95% CI 0.22 to 0.50).
+- At the same age, education, work status and income, divorced or separated adults had
+  about 2.3 times the odds of married adults of being not satisfied at all with their
+  finances (OR 2.29, 95% CI 1.70 to 3.08).
+- At the same age, work status, marital status and income, adults with a graduate degree
+  had about half the odds of adults without a high school diploma of being not satisfied
+  at all with their finances (OR 0.48, 95% CI 0.30 to 0.78).
+- At the same age, education, work status and marital status, adults with a family income
+  of $110k or more had a quarter of the odds of adults with under $30k of being not
+  satisfied at all with their finances (OR 0.25, 95% CI 0.16 to 0.39).
+- At the same education, work status, marital status and income, adults aged 30-44 had
+  about twice the odds of adults aged 18-29 of being not satisfied at all with their
+  finances (OR 2.01, 95% CI 1.34 to 3.01).
+- Adults aged 65+ were the least dissatisfied age group in the crosstabs (19.0%), but once
+  work status is held constant, they no longer clearly differ from adults aged 18-29
+  (OR 1.30, 95% CI 0.75 to 2.27). Most adults aged 65+ are retired, so the model credits
+  their advantage to retirement rather than age. Because age and retirement overlap so
+  much, this is the most likely reading, not a proven one.
+
+### Predictions vs results (predictions written 1 October 2026, before the model)
+
+- Age, predicted to weaken: not supported. The age differences did not weaken when income
+  was added; the odds ratios for ages 30-44 and 45-64 moved slightly away from 1.
+- Education, predicted to stay: partly right. It weakened a lot once income was added: the
+  bachelor's degree no longer clearly differs, but a graduate degree still does (OR 0.48).
+- Work status, predicted to stay: right, but because of retirees (OR 0.33, even stronger
+  once income is held constant), not the unemployed (OR 1.66, no longer clear) or
+  part-time workers (OR 1.02).
+- Marital status, predicted to stay: right. Divorced or separated (OR 2.29) and never
+  married (OR 1.41) weakened a little but stayed clear.
