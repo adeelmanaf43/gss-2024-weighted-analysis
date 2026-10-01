@@ -1,0 +1,24 @@
+"characteristic","group","n","pct","pct_low","pct_upp"
+"age","18-29",454,31.5,25,38.8
+"age","30-44",874,37.4,32.9,42.1
+"age","45-64",1024,31.9,27.6,36.4
+"age","65+",840,19,15.2,23.4
+"education","Less than high school",301,42.5,35.8,49.6
+"education","High school",1498,35,31.3,38.8
+"education","Associate/junior college",298,34,26.9,41.8
+"education","Bachelor's",718,23.8,19.9,28.2
+"education","Graduate",473,14.8,11,19.7
+"work_status","Full time",1455,30.6,27.3,34.2
+"work_status","Part time",319,35.9,28.7,43.8
+"work_status","Unemployed",165,51.2,38.2,64.1
+"work_status","Retired",792,14.9,11.8,18.5
+"work_status","Other",552,38.8,32.2,45.8
+"marital_status","Married",1357,22.7,19.9,25.8
+"marital_status","Widowed",247,28.8,19.7,40.2
+"marital_status","Divorced or separated",620,46.3,41.4,51.3
+"marital_status","Never married",1053,37.6,32.5,43
+"income","Under $30k",751,43.1,37.3,49
+"income","$30k-$59k",668,42.5,37.6,47.5
+"income","$60k-$109k",746,31.2,27.3,35.4
+"income","$110k+",756,12.8,10.1,16.1
+"income","Not reported",370,35.5,28,43.8
