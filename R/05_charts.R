@@ -10,7 +10,7 @@ library(ggplot2)
 
 options(survey.lonely.psu = "adjust") # same setting as in 03_design.R
 
-desig_main <- readRDS("data/design_main.rds")
+design_main <- readRDS("data/design_main.rds")
 
 # Chart colors: one blue for the data, grays for everything else
 col_dots       <- "#2a78d6"       # dots and interval lines
@@ -42,8 +42,8 @@ estimate_by <- function(design, group_var){
 }
 
 est <- list(
-  age             = estimate_by(desig_main,age_group),
-  education       = estimate_by(desig_main, education),
+  age             = estimate_by(design_main,age_group),
+  education       = estimate_by(design_main, education),
   work_status     = estimate_by(design_main, work_status),
   marital_status  = estimate_by(design_main, marital_status),
   income          = estimate_by(design_main, income_group)
@@ -68,7 +68,7 @@ theme_gss <- function(){
           plot.subtitle   = element_text(colour = col_text2, margin = margin(b = 12)),
           plot.caption    = element_text(colour = col_muted, size = 8.5, hjust = 0,
                                          margin = margin(t=12)),
-          axis.text.y     = element_text(coloyr = col_text2, size = 10),
+          axis.text.y     = element_text(colour = col_text2, size = 10),
           axis.text.x     = element_text(colour = col_muted),
           panel.grid.major.x = element_line(colour = col_grid, linewidth = 0.3),
           panel.grid.major.y = element_blank(),
@@ -90,9 +90,9 @@ plot_groups <- function(data, title, file, sort = FALSE){
     # Reference line: all U.S. adults
     geom_vline(xintercept = national, colour = col_muted, linewidth = 0.5) +
     annotate("text", x = national + 0.008, y = nrow(data) + 0.6, hjust = 0, size = 3.2, colour = col_text2,
-             label = paste0("All U.S. adults:", round(100 * national), "%")) +
+             label = paste0("All U.S. adults: ", round(100 * national), "%")) +
     # 95% confidence interval (line) and estimate (dot)
-    geom_linerange(aes(xmin = pct_low, xmax = pct-upp), orientation = "y",
+    geom_linerange(aes(xmin = pct_low, xmax = pct_upp), orientation = "y",
                    color = col_dots, linewidth = 0.7) +
     geom_point(shape = 21, size = 3.2, fill = col_dots, colour = col_surface,
                stroke = 0.9) +
@@ -121,7 +121,7 @@ plot_groups(est$age,
             "Adults 65 and older are the least likely to be dissatisfied",
             "outputs/fig1_age.png")
 plot_groups(est$education,
-            "Dissatisfaction falls as education rises",
+            "Dissatisfaction drops sharply with a bachelor's degree or more",
             "outputs/fig2_education.png")
 plot_groups(est$work_status,
             "Retirees are half as likely as full-time workers to be dissatisfied",
