@@ -71,3 +71,8 @@ table3_gt <- as_gt(table3) |>
 
 
 gt::gtsave(table3_gt, "outputs/table3_model.html")
+
+# 4. Save results for the Quarto report -------------------------------------------
+saveRDS(model_b,   "data/model_b.rds")
+saveRDS(tests_b,   "data/model_tests.rds")
+saveRDS(table3_gt, "data/table3_gt.rds")

@@ -36,3 +36,6 @@ print(table2) # opens in Rstudio's Viewer pane
 table2_gt <- as_gt(table2) |>
   gt::tab_source_note("Source: 2024 General Social Survey (NORC), main sample. Weighted row percentages.")
   gt::gtsave(table2_gt, "outputs/table2_crosstabs.html")
+  
+  # 3. Save the table for the Quarto report --------------------------------------------
+  saveRDS(table2_gt, "data/table2_gt.rds")

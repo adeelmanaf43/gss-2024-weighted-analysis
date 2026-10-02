@@ -1,0 +1,5 @@
+# Makes this folder a Quarto project. Quarto then starts R in this folder,
+# so renv switches on and the report uses the project's packages.
+project:
+  render:
+    - reports/report.qmd

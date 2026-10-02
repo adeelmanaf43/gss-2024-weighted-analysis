@@ -56,3 +56,9 @@ data-raw/*
 
 # Clean data made by R/01_clean.R: never commit
 data/
+
+
+# Quarto working files
+/.quarto/
+reports/*_files/
+**/*.quarto_ipynb
