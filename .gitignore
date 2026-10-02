@@ -50,6 +50,8 @@ data-raw/*
 !data-raw/README.md
 
 
+ .RDataTmp*
+
 
 # Clean data made by R/01_clean.R: never commit
 data/

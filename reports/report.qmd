@@ -6,6 +6,7 @@ date: today
 date-format: "D MMMM YYYY"
 format:
   html:
+    html-table-processing: none
     toc: true
     toc-depth: 3
     embed-resources: true
