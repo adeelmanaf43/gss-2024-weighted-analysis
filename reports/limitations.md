@@ -62,3 +62,14 @@ at all" with the other two answers, and a different split might give somewhat
 different results. Some groups also combine different situations: "Other" work status
 includes people temporarily off work, in school or keeping house, and divorced and
 separated adults are combined into one group.
+
+## Next steps
+
+- **Use all three satisfaction answers.** Fit an ordinal model (`svyolr()` in the
+  survey package) to check that the results don't depend on how the outcome was split.
+- **Add wealth and health measures.** Analyze ballots A and B on their own, adding
+  home ownership and self-rated health, to test the "security" idea suggested by the
+  retiree results.
+- **Check results by mode** once NORC releases mode-specific weights, which it plans
+  for future releases.
+- **Compare with the 2022 GSS,** keeping NORC's caution about method changes in mind.

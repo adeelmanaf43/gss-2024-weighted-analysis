@@ -10,6 +10,9 @@ format:
     toc-depth: 3
     embed-resources: true
     theme: cosmo
+    include-in-header:
+      - text: |
+          <style>caption { caption-side: top; }</style>
 execute:
   echo: false
   warning: false

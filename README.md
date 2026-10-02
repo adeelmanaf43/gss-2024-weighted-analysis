@@ -46,15 +46,4 @@ Weighting decision: the main analysis uses the 3,309 main-sample respondents wit
 
 See [reports/limitations.md](reports/limitations.md). The full section is also in the report.
 
-## Next steps
-
-- **Use all three satisfaction answers.** Fit an ordinal model (`svyolr()` in the
-  survey package) to check that the results don't depend on how the outcome was split.
-- **Add wealth and health measures.** Analyze ballots A and B on their own, adding
-  home ownership and self-rated health, to test the "security" idea suggested by the
-  retiree results.
-- **Check results by mode** once NORC releases mode-specific weights, which it plans
-  for future releases.
-- **Compare with the 2022 GSS,** keeping NORC's caution about method changes in mind.
-
 ## Contact

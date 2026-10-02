@@ -64,11 +64,11 @@ print(table3)   # Opens in Rstudio's viewer pane
 
 table3_gt <- as_gt(table3) |>
   gt::tab_source_note(paste0(
-    "Weighted logisitc regression (svyglm, quasibinomial). OR = odds ratio;",
-    "above 1 = higher odds of dissatisfaction then the reference group (shown as -).",
-    "Source: 2024 General Social Survey (NORC), main sample, n = ", nobs(model_b), "."
+    "Weighted logistic regression (svyglm, quasibinomial family). OR = odds ratio; ",
+    "an OR above 1 means higher odds of dissatisfaction than the reference group ",
+    "(shown as a dash). Source: 2024 General Social Survey (NORC), main sample, n = ",
+    format(nobs(model_b), big.mark = ","), "."
   ))
-
 
 gt::gtsave(table3_gt, "outputs/table3_model.html")
 
