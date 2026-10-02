@@ -40,6 +40,17 @@ Weighting decision: the main analysis uses the 3,309 main-sample respondents wit
 
 ## How to reproduce
 
+You need R (this project used 4.2.1), [Quarto](https://quarto.org) 1.3 or later, and Git.
+
+1. Clone this repo.
+2. Download the 2024 GSS data as described in [data-raw/README.md](data-raw/README.md).
+3. From the project folder, install the exact package versions used:
+   `Rscript -e "renv::restore()"`
+4. Rebuild everything: `Rscript run_all.R`
+
+`run_all.R` reruns the cleaning, checks, tables, charts and model, renders the
+report, and copies it to `docs/index.html`, which GitHub Pages publishes.
+
 ## Repo map
 
 ## Limitations and next steps

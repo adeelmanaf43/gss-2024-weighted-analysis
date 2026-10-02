@@ -62,3 +62,10 @@ data/
 /.quarto/
 reports/*_files/
 **/*.quarto_ipynb
+
+
+# Working copy of the report (the published copy is docs/index.html)
+reports/report.html
+
+# Plots R may create when run from the command line
+Rplots.pdf
