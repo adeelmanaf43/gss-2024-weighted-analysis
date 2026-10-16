@@ -93,4 +93,4 @@ Full details: [reports/limitations.md](reports/limitations.md), also in the repo
 
 ## Contact
 
-Adeel Manaf · [your email] · [your LinkedIn URL]
+Adeel Manaf · [Email](mailto:adeelmanaf00@gmail.com) · [LinkedIn](https://www.linkedin.com/in/adeel-manaf/)
