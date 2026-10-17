@@ -187,3 +187,7 @@ table3_gt
 ## Data citation
 
 Davern, Michael; Bautista, Rene; Freese, Jeremy; Herd, Pamela; and Morgan, Stephen L.; General Social Survey 1972-2024. [Machine-readable data file]. Principal Investigator, Michael Davern; Co-Principal Investigators, Rene Bautista, Jeremy Freese, Pamela Herd, and Stephen L. Morgan. NORC ed. Chicago, 2026. 1 datafile (Release 3a) and 1 codebook (2024 Release 3a).
+
+## Contact
+
+Adeel Manaf · [Email](mailto:adeelmanaf00@gmail.com) · [LinkedIn](https://www.linkedin.com/in/adeel-manaf/)
